@@ -1,6 +1,6 @@
 @page "/python_list"
-@using BlazorLib.Interop
-@using UtilLib
+@using CobolAiGui.Interop
+@using CobolAiLib
 @inject NavigationManager Navigation
 @inject IInteropApi InteropApi
 
@@ -61,7 +61,7 @@
 	// PYTHON LOGIC
 	// ==========================================
 
-	private void OpenFile(ScriptFile file)
+	private void OpenFile(ScriptRecord file)
 	{
 		Navigation.NavigateTo($"/python_content/{file.FileName}");
 	}

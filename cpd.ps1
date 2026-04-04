@@ -1,6 +1,6 @@
 # Configuration
 # Update these variables to match your specific project folder names
-$BlazorProjectName = "BlazorLib"         # The folder name of your Blazor WASM project
+$BlazorProjectName = "CobolAiGui"         # The folder name of your Blazor WASM project
 $DesktopProjectName = "CobolStudioDesktop" # The folder name of your Desktop project
 $Framework = "net10.0"                      # The .NET version (check your .csproj)
 $Configuration = "Debug"                 # Build configuration

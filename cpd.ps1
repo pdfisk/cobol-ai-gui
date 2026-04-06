@@ -1,16 +1,16 @@
 # Configuration
 # Update these variables to match your specific project folder names
 $BlazorProjectName = "CobolAiGui"         # The folder name of your Blazor WASM project
-$DesktopProjectName = "CobolStudioDesktop" # The folder name of your Desktop project
+$DesktopProjectName = "CobolAiDesktop" # The folder name of your Desktop project
 $Framework = "net10.0"                      # The .NET version (check your .csproj)
 $Configuration = "Debug"                 # Build configuration
 
 # Paths
 $LibsDir = '..'
-$ProjectsDir = '../../cobol-studio-desktop'
 $BlazorProjectDir = Join-Path $LibsDir $BlazorProjectName
+$DesktopProjectDir = Join-Path $LibsDir $DesktopProjectName
 $SourceDir = Join-Path $BlazorProjectDir "bin\$Configuration\$Framework\browser-wasm\publish\wwwroot"
-$DestDir = Join-Path $ProjectsDir "$DesktopProjectName\bin\debug\net10.0-windows10.0.19041.0\win-x64\wwwroot"
+$DestDir = Join-Path $DesktopProjectDir "bin\debug\net10.0-windows10.0.19041.0\win-x64\wwwroot"
 
 echo $SourceDir
 echo $DestDir

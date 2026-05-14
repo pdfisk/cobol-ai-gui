@@ -1,9 +1,11 @@
 @inherits LayoutComponentBase
+@using CobolStudioGui.Constants
 
 <RadzenLayout style="height: 100vh;">
     <RadzenSidebar style="width: 200px;">
         <RadzenStack Orientation="Orientation.Vertical" Gap="0" class="p-3" style="height: 100%;">
-            <RadzenText TextStyle="TextStyle.H6" class="mb-3" style="color: var(--rz-text-color);">Cobol Studio</RadzenText>
+            <RadzenText TextStyle="TextStyle.H6" style="color: white">Cobol Studio</RadzenText>
+            <RadzenText TextStyle="TextStyle.Overline" style="font-size: 0.72rem; color: ivory" class="mb-2">@AppInfo.BuildDate()</RadzenText>
             <RadzenPanelMenu>
                 <RadzenPanelMenuItem Text="Home" Icon="home" Path="/" />
                 <RadzenPanelMenuItem Text="Browse Cobol" Icon="description" Path="/browse-cobol" />

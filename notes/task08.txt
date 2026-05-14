@@ -1,0 +1,2 @@
+1. on the console page add a split panel with text areas on both sides
+2. at the bottom of the page add two buttons: Eval and Clear

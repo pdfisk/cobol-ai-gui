@@ -1,4 +1,37 @@
 @page "/console"
 
 <RadzenText TextStyle="TextStyle.H4" class="mb-3">Console</RadzenText>
-<RadzenText TextStyle="TextStyle.Body1">Python script console — coming soon.</RadzenText>
+
+<RadzenSplitter Style="height: calc(100vh - 180px);">
+    <RadzenSplitterPane Size="50%" Min="200px" Resizable="true">
+        <RadzenTextArea @bind-Value="@Input"
+                        Placeholder="Enter script here..."
+                        Style="width: 100%; height: 100%; font-family: monospace; resize: none;" />
+    </RadzenSplitterPane>
+    <RadzenSplitterPane Resizable="true">
+        <RadzenTextArea @bind-Value="@Output"
+                        Placeholder="Output..."
+                        Style="width: 100%; height: 100%; font-family: monospace; resize: none;" />
+    </RadzenSplitterPane>
+</RadzenSplitter>
+
+<RadzenStack Orientation="Orientation.Horizontal" Gap="8px" class="mt-2">
+    <RadzenButton Text="Eval" ButtonStyle="ButtonStyle.Primary" Click="@Eval" />
+    <RadzenButton Text="Clear" ButtonStyle="ButtonStyle.Light" Click="@Clear" />
+</RadzenStack>
+
+@code {
+    private string Input = string.Empty;
+    private string Output = string.Empty;
+
+    private void Eval()
+    {
+        // TODO: evaluate Input and write result to Output
+    }
+
+    private void Clear()
+    {
+        Input = string.Empty;
+        Output = string.Empty;
+    }
+}

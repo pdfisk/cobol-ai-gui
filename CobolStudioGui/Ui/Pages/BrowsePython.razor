@@ -1,4 +1,22 @@
 @page "/browse-python"
+@inherits FileBrowserBase
 
-<RadzenText TextStyle="TextStyle.H4" class="mb-3">Browse Python</RadzenText>
-<RadzenText TextStyle="TextStyle.Body1">Python file browser — coming soon.</RadzenText>
+<RadzenText TextStyle="TextStyle.H5" class="mb-2">@Title</RadzenText>
+
+<RadzenSplitter Style="height: calc(100vh - 120px);">
+    <RadzenSplitterPane Size="30%" Min="160px" Resizable="true">
+        <RadzenListBox TValue="string"
+                       Data="@Files"
+                       Value="@SelectedFile"
+                       ValueChanged="@SelectFile"
+                       Style="width: 100%; height: 100%;" />
+    </RadzenSplitterPane>
+    <RadzenSplitterPane Resizable="true">
+        <RadzenTextArea @bind-Value="@FileContent"
+                        Style="width: 100%; height: 100%; font-family: monospace;" />
+    </RadzenSplitterPane>
+</RadzenSplitter>
+
+@code {
+    protected override string Title => "Browse Python";
+}

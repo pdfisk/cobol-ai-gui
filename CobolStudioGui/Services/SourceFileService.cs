@@ -15,17 +15,17 @@ public class SourceFileService
         _apiConfig = apiConfig;
     }
 
-    public async Task<List<string>> GetFileNamesAsync(string table)
+    public async Task<List<string>> GetFileNamesAsync(string path)
     {
         var files = await _http.GetFromJsonAsync<List<SourceFile>>(
-            $"{_apiConfig.BaseUrl}/{table}");
+            $"{_apiConfig.BaseUrl}/{path}");
         return files?.Select(f => f.FileName).ToList() ?? new();
     }
 
-    public async Task<string> GetContentAsync(string table, string fileName)
+    public async Task<string> GetContentAsync(string path, string fileName)
     {
         var file = await _http.GetFromJsonAsync<SourceFile>(
-            $"{_apiConfig.BaseUrl}/{table}/{Uri.EscapeDataString(fileName)}");
+            $"{_apiConfig.BaseUrl}/{path}/{Uri.EscapeDataString(fileName)}");
         return file?.Content ?? string.Empty;
     }
 }

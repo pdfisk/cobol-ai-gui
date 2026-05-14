@@ -7,7 +7,10 @@
       "Bash(Get-ChildItem -Recurse -Depth 2)",
       "Bash(Select-Object -ExpandProperty FullName)",
       "Bash(Sort-Object)",
-      "Bash(Get-ChildItem -Recurse \"c:\\\\Users\\\\peter\\\\source\\\\repos\\\\development\\\\csharp\\\\cobol-studio-gui\\\\CobolStudioGui\" -Include \"*.razor\",\"*.cs\",\"*.html\",\"*.json\",\"*.csproj\")"
+      "Bash(Get-ChildItem -Recurse \"c:\\\\Users\\\\peter\\\\source\\\\repos\\\\development\\\\csharp\\\\cobol-studio-gui\\\\CobolStudioGui\" -Include \"*.razor\",\"*.cs\",\"*.html\",\"*.json\",\"*.csproj\")",
+      "Bash(grep -r \"^public.*class Text\" \"c:/Users/peter/.nuget/packages/radzen.blazor/10.4.3/lib\" 2>/dev/null | head -5; echo \"---\"; find \"c:/Users/peter/.nuget/packages/radzen.blazor/10.4.3\" -name \"*.dll\" | head -3)",
+      "Read(//c/Users/peter/.nuget/packages/radzen.blazor/10.4.3/lib/**)",
+      "Read(//c/Users/peter/.nuget/packages/radzen.blazor/10.4.3/**)"
     ]
   }
 }

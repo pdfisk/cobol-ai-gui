@@ -1,0 +1,5 @@
+1. add a static variable to Text:
+--  AppLabel with a value "Cobol Studio"
+2. in MainLayout:
+-- use AppLabel instead of the literal "Cobol Studio"
+-- center the build date under the "Cobol Studio" text

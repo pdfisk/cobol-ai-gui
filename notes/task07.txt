@@ -1,0 +1,7 @@
+1. if the application is hosted on localhost, use localhost:5000 to retrieve data
+2. otherwise, use https://cobol-ai-studio-d0c7533a4035.herokuapp.com/ to retrieve data
+3. the data is returned in JSON format with fields fileName and content
+4. example requests:
+-- http://localhost:5000/cobol_db for local Cobol data
+-- https://cobol-ai-studio-d0c7533a4035.herokuapp.com/python_db for remote python data
+

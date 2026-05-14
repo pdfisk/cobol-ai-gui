@@ -1,0 +1,5 @@
+1. refactor the existing code to place Layout and Pages under a new folder named Ui.
+2. add a Constants folder
+3. under the Constants folder add a static class named AppInfo.
+4. in the AppInfo class add a static method named BuildDate which returns the current date in yyyy-MMM-dd format.
+5. in the left panel at the top under "Cobol Studio" add the build date in small letters

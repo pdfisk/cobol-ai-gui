@@ -1,0 +1,7 @@
+Design a simple Blazor WASM home page with Radzen widgets:
+-- there is a left panel with navigation buttons:
+=== "Home" shows a home page
+=== "Browse Cobol" shows a page for browsing Cobol files
+=== "Browse Python" shows a page for browsing Python files
+=== "Console" shows a page for running Python scripts
+-- simply use a placeholder in each of the above pages

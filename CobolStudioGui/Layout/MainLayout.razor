@@ -1,0 +1,22 @@
+@inherits LayoutComponentBase
+
+<RadzenLayout style="height: 100vh;">
+    <RadzenSidebar style="width: 200px;">
+        <RadzenStack Orientation="Orientation.Vertical" Gap="0" class="p-3" style="height: 100%;">
+            <RadzenText TextStyle="TextStyle.H6" class="mb-3" style="color: var(--rz-text-color);">Cobol Studio</RadzenText>
+            <RadzenPanelMenu>
+                <RadzenPanelMenuItem Text="Home" Icon="home" Path="/" />
+                <RadzenPanelMenuItem Text="Browse Cobol" Icon="description" Path="/browse-cobol" />
+                <RadzenPanelMenuItem Text="Browse Python" Icon="code" Path="/browse-python" />
+                <RadzenPanelMenuItem Text="Console" Icon="terminal" Path="/console" />
+            </RadzenPanelMenu>
+        </RadzenStack>
+    </RadzenSidebar>
+    <RadzenBody>
+        <div class="p-4">
+            @Body
+        </div>
+    </RadzenBody>
+</RadzenLayout>
+
+<RadzenComponents />

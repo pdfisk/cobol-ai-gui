@@ -1,0 +1,5 @@
+1. change "View Cobol Files" to "Cobol Files"
+2. change "View Python Files" to "Python Files"
+3. Add a "Home" button to the buttons panel
+4. The home button should show the welcome panel
+5. make the file browser split panel adjustable

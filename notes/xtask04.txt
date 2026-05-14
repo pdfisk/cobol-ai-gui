@@ -1,0 +1,11 @@
+1. if the application is hosted on localhost, use localhost:5000 to retrieve data
+2. otherwise, use https://cobol-ai-studio-d0c7533a4035.herokuapp.com/ to retrieve data
+3. the local database connection parameters are:
+ Host = "localhost",
+ Port = 5432,
+ Username = "admin",
+ Password = "chichi",
+ Database = "cobol_studio"
+4. the remote connection string is in an environment variable DATABASE_URL
+5. the database tables are cobol_source_files and python_source_files
+6. both tables have fields "file_name" and "content"

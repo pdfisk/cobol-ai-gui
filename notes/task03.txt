@@ -1,0 +1,9 @@
+1. in class AppInfo change BuildDate from a static function to a static variable.
+2. add a static class Colors under the Constants folder.
+3. add two static variables to Colors:
+-- White with a value "#FFFFFF"
+-- Ivory with a value "#FFFFF0"
+4. in MainLayout:
+-- set the color of "Cobol Studio" to White
+-- set the color of BuildDate to Ivory
+-- center the build date under "Cobol Studio"
